@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>简历</title>
+        <link rel="stylesheet" href="static/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css"
+        />
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script> -->
+        <!-- <script src="static/js/script.js"></script> -->
+
+        <script>
+            document.onkeydown = function (e) {
+                if (
+                    e.key === "F12" ||
+                    (e.ctrlKey && e.shiftKey && e.key === "I") ||
+                    (e.ctrlKey && e.key === "U")
+                ) {
+                    e.preventDefault();
+                    return false;
+                }
+            };
+
+            // 禁用右键菜单的函数
+            document.oncontextmenu = function disableRightClick(e) {
+                // 兼容IE和其他浏览器的事件对象
+                e = e || window.event;
+                // 阻止默认的右键菜单行为
+                if (e.preventDefault) {
+                    e.preventDefault();
+                } else {
+                    e.returnValue = false;
+                }
+            };
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", e => {
+                // .real 真实信息
+                // .virt 虚拟信息
+                var realDoms = document.querySelectorAll(".real");
+                realDoms.forEach(function (dom) {
+                    dom.remove();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container" id="cv">
+            <div class="side">
+                <div class="me">
+                    <div class="portrait">
+                        <img class="virt" src="static/image/avatar-default.png" alt="" />
+                    </div>
+                    <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                        <h3>请输入图片URL地址：</h3>
+                        <br />
+                        <input type="text" id="avatar-url" />
+                        <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                    </div>
+                    <h1 class="real" id="username">赖洪韬</h1>
+                    <h1 class="virt" id="username">CoderTao</h1>
+                    <h4 id="persona-tag">WEB前端开发</h4>
+                </div>
+                <div class="profile info-unit">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-person"></i>
+                        <span class="info-title">基本信息</span>
+                    </h2>
+                    <hr />
+                    <ul class="info-list">
+                        <li>
+                            <label class="left-label">姓名</label
+                            ><span class="real label-value">赖洪韬</span
+                            ><span class="virt label-value">CoderTao</span>
+                        </li>
+                        <li>
+                            <label class="left-label">性别</label
+                            ><span class="label-value">男</span>
+                        </li>
+                        <li>
+                            <label class="left-label">年龄</label
+                            ><span class="label-value">26岁</span>
+                        </li>
+                        <li>
+                            <label class="left-label">学历</label
+                            ><span class="label-value">本科</span>
+                        </li>
+                        <li>
+                            <label class="left-label">政治面貌</label
+                            ><span class="label-value">中共党员</span>
+                        </li>
+                        <li>
+                            <label class="left-label">工作经验</label
+                            ><span class="label-value">5年</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact info-unit">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-call"></i> <span class="info-title">联系方式</span>
+                    </h2>
+                    <hr />
+                    <ul class="info-list">
+                        <li>
+                            <label class="left-label">邮箱</label
+                            ><span class="real label-value">taodream518@gmail.com</span
+                            ><span class="virt label-value">tao****@gmail.com</span>
+                        </li>
+                        <li>
+                            <label class="left-label">个人博客</label
+                            ><span class="label-value"
+                                ><a href="https://taodream518.github.io">点击跳转</a></span
+                            >
+                        </li>
+                        <li>
+                            <label class="left-label">Github</label
+                            ><span class="label-value"
+                                ><a href="https://github.com/taodream518">点击跳转</a></span
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 教育经历 -->
+                <div class="stack info-unit">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-education"></i>
+                        <span class="info-title">教育经历</span>
+                    </h2>
+                    <hr />
+
+                    <div class="virt educ-item">
+                        <h4>
+                            <span class="label">华南师范大学</span>
+                            <span>2016-2019</span>
+                        </h4>
+                        <p>移动应用开发</p>
+                    </div>
+                </div>
+
+                <div class="stack info-unit">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-build"></i> <span class="info-title">技术栈</span>
+                    </h2>
+                    <hr />
+                    <ul class="stack-list">
+                        <li>
+                            <label class="left-label">前端</label
+                            ><span class="label-value">javascript、vue、react</span>
+                        </li>
+                        <li>
+                            <label class="left-label">后端</label
+                            ><span class="label-value">nodejs、express、koa</span>
+                        </li>
+                        <li>
+                            <label class="left-label">数据库</label
+                            ><span class="label-value">mysql、mongodb</span>
+                        </li>
+                        <li>
+                            <label class="left-label">其它</label
+                            ><span class="label-value">git、docker、nginx...</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="code info-unit">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-weixin"></i>
+                        <span class="info-title">自我评价</span>
+                    </h2>
+                    <hr />
+                    <p class="indent">
+                        在工作方面，一直秉持着认真负责的态度，编写高质量代码、良好的代码风格和注释习惯，对团队协作和未来的代码维护至关重要。
+                    </p>
+                    <p class="indent">
+                        在技术方面，能够通过阅读官方文档、开源社区、B站、掘金、CSDN等知识网站等方式自主学习和实践迅速掌握，并将它们融入到项目开发中，不断提升自己的技术水平和行业视野。
+                    </p>
+                </div>
+            </div>
+
+            <div class="main">
+                <!-- 个人技能 -->
+                <div class="skill info-unit right-list">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-build"></i> <span class="info-title">个人技能</span>
+                    </h2>
+                    <hr />
+                    <ul class="experience-list" style="list-style: none">
+                        <li>
+                            <p>1. 熟练并掌握html、css、javascript、typescript、es6+。</p>
+                            <p>2. 掌握vue、react等主流框架，webpack前端工程化，组件化思想。</p>
+                            <p>
+                                3. 熟悉nodejs，express、koa等框架，遵守restful风格和前后端数据交互。
+                            </p>
+                            <p>4. 熟练uniapp框架进行开发h5、微信小程序等，处理过多端兼容性问题。</p>
+                            <p>
+                                5.
+                                熟悉mysql、mongodb数据库操作，熟悉http协议、常见的安全问题和对策。
+                            </p>
+                            <p>6. 熟练使用git，linux命令、nginx配置等、docker构建打包部署。</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 工作经历 -->
+                <div class="work info-unit right-list">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-work"></i> <span class="info-title">工作经历</span>
+                    </h2>
+                    <hr />
+                    <ul class="experience-list">
+                        <!-- <li>
+                            <h3 class="title">
+                                <span
+                                    >创域科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;2018.07 -
+                                    2019.01（实习）</span
+                                >
+                                <span class="dept">技术部</span>
+                            </h3>
+                            <p>1.负责公司五金产品官网的升级改版。</p>
+                            <p>
+                                2.负责PHP后端开发，开发五金产品相关的功能接口，并把数据展示到页面上以及完成相应的页面交互逻辑。
+                            </p>
+                        </li> -->
+
+                        <li>
+                            <h3 class="title">
+                                <span
+                                    >协信科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;2019.06 - 2021.01</span
+                                >
+                                <span class="dept">技术部</span>
+                            </h3>
+                            <p>1. 负责前端界面布局编写、实现动态交互。</p>
+                            <p>2. 负责与后端进行接口联调、数据展示、bug进行修复等。</p>
+                            <p>3. 参与业务的需求评审、与ui进行对接设计稿的相关工作。</p>
+                        </li>
+
+                        <li>
+                            <h3 class="title">
+                                <span>赛姆科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;2021.03 - 至今</span>
+                                <span class="dept">研发中心</span>
+                            </h3>
+
+                            <!-- 项目 -->
+                            <h3 class="pad">项目一、XX安全运营平台（后台管理系统）</h3>
+                            <p>
+                                项目简述：该项目主要集成各安全产品的功能模块，基于RBAC权限设计的系统，有数据安全、网络安全、平台安全、主机安全、基线检查等功能模块。采用搭建私库包管理进行模块化开发，代码采用gitlab进行仓库存放，用git进行代码版本管理和控制。
+                            </p>
+                            <p>
+                                前端技术栈：vue2.x + vue-router + vuex + axios + element-ui +
+                                webpack + typescpirt + echarts等
+                            </p>
+                            <p>主要职责：</p>
+                            <p>1. 负责前端交互逻辑的实现、与后端进行接口联调、bug进行修复等。</p>
+                            <p>2. 对公共组件、库的抽离封装，节省开发时间。</p>
+                            <p>3. 参与业务的需求评审、前端项目用到的技术进行相关的技术调研。</p>
+                            <p>4. 负责用户界面的体验优化、性能优化、维护系统的稳定性。</p>
+                            <p>
+                                5.
+                                负责把控前端相关人员的工作进度以及解决前端开发人员遇到的一些疑难点，有效推进项目进度。
+                            </p>
+                            <p>6. 对经过准入、渗透等测试的系统进行修复安全漏洞。</p>
+
+                            <!-- 项目 -->
+                            <h3 class="pad">项目二、粤政X H5</h3>
+                            <p>
+                                项目简述：主要适配省政务网进行web内嵌的一个子应用，用于检测sim卡的状态、管理sim卡相关配置、密钥管理和连接专网隧道的H5。
+                            </p>
+                            <p>
+                                前端技术栈：vue3.x + vue-router + pinia + axios + vant-ui + webpack
+                                + typescpirt
+                            </p>
+                            <p>主要职责：</p>
+                            <p>1. 参与业务的需求评审，与产品沟通并调研、确认前端技术栈。</p>
+                            <p>2. 负责前端页面交互逻辑实现、对接微信SDK的接口和bug进行修复等。</p>
+                            <p>3. 负责用户界面的动画，体积、性能优化等</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 个人项目 -->
+                <div class="project info-unit right-list">
+                    <h2 class="info-header">
+                        <i class="iconfont icon-project"></i>
+                        <span class="info-title">个人项目</span>
+                    </h2>
+                    <hr />
+                    <ul class="experience-list">
+                        <li>
+                            <h3>基于 Vuepress 的技术博客</h3>
+                            <p>
+                                项目简介：该项目主要用于记录个人的学习笔记，属于自己的知识财库。撰写技术博客可以系统地整理自己的知识和经验，再通过文章的形式分享出去。这个过程不仅是自我巩固知识和技能的好方法，也能帮助到他人。我认为在技术领域，需要持续学习对职业发展至关重要。
+                            </p>
+                            <p>前端技术栈：vuepress + vue</p>
+                        </li>
+
+                        <li>
+                            <h3>基于 React + Koa2 + MySQL 的 CMS 后台管理系统</h3>
+                            <p>
+                                项目简介：该项目涵盖的功能主要有基于JWT登录、系统管理（用户管理、角色管理、权限管理、字典管理、字典数据管理）、内容管理（文章发布、文章管理、文章分类、标签管理）、安全配置（IP黑名单、IP白名单）、日志管理（登录日志、操作日志）、文件管理（文件上传、文件下载）等核心模块。
+                                其中后端接口实现限流功能以及根据IP进行封堵用户，使系统有一定的安全性。
+                            </p>
+                            <p>
+                                前端技术栈：react + zustand + td-design-react + axios +
+                                vite进行搭建。
+                            </p>
+                            <p>
+                                后端技术栈：nodejs + koa2 + mysql + sequelize + jwt + redis
+                                进行搭建。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

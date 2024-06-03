@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基于vuepress搭建博客的过程二（插件篇） | YGKing Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="基于vuepress搭建的个人博客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.4415e5c9.css" as="style"><link rel="preload" href="/assets/js/app.23792ed5.js" as="script"><link rel="preload" href="/assets/js/3.f832e103.js" as="script"><link rel="preload" href="/assets/js/1.09eabf93.js" as="script"><link rel="preload" href="/assets/js/27.b177e864.js" as="script"><link rel="preload" href="/assets/js/9.b9f2e0ad.js" as="script"><link rel="prefetch" href="/assets/js/10.4ee935f7.js"><link rel="prefetch" href="/assets/js/11.478384ea.js"><link rel="prefetch" href="/assets/js/12.a755b6f6.js"><link rel="prefetch" href="/assets/js/13.3ab72cb3.js"><link rel="prefetch" href="/assets/js/14.0ae9ab45.js"><link rel="prefetch" href="/assets/js/15.ca3a95b1.js"><link rel="prefetch" href="/assets/js/16.db81403f.js"><link rel="prefetch" href="/assets/js/17.47c01f38.js"><link rel="prefetch" href="/assets/js/18.698e9191.js"><link rel="prefetch" href="/assets/js/19.255b41f5.js"><link rel="prefetch" href="/assets/js/20.dd6c7658.js"><link rel="prefetch" href="/assets/js/21.db2b4b33.js"><link rel="prefetch" href="/assets/js/22.dd556488.js"><link rel="prefetch" href="/assets/js/23.740b62b4.js"><link rel="prefetch" href="/assets/js/24.00a5198c.js"><link rel="prefetch" href="/assets/js/25.83214ede.js"><link rel="prefetch" href="/assets/js/26.520705ca.js"><link rel="prefetch" href="/assets/js/28.51f8bc15.js"><link rel="prefetch" href="/assets/js/29.713d1785.js"><link rel="prefetch" href="/assets/js/4.18293290.js"><link rel="prefetch" href="/assets/js/5.74a63ad4.js"><link rel="prefetch" href="/assets/js/6.4ab946a5.js"><link rel="prefetch" href="/assets/js/7.a93f3fa8.js"><link rel="prefetch" href="/assets/js/8.9922d7e0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4415e5c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>YGKing Blog</h3> <p class="description" data-v-59e6cb88>基于vuepress搭建的个人博客</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>CoderTao</span>
+          
+        <span data-v-59e6cb88>2022 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="YGKing Blog" class="logo"> <span class="site-name">YGKing Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础原理/" class="nav-link"><i class="undefined"></i>
+  基础原理
+</a></li><li class="dropdown-item"><!----> <a href="/categories/开发工具/" class="nav-link"><i class="undefined"></i>
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络协议/" class="nav-link"><i class="undefined"></i>
+  网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/项目部署/" class="nav-link"><i class="undefined"></i>
+  项目部署
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于个人
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/taodream518" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://taodream518.github.io/resume" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  个人简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    CoderTao
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>17</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>20</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础原理/" class="nav-link"><i class="undefined"></i>
+  基础原理
+</a></li><li class="dropdown-item"><!----> <a href="/categories/开发工具/" class="nav-link"><i class="undefined"></i>
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络协议/" class="nav-link"><i class="undefined"></i>
+  网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/项目部署/" class="nav-link"><i class="undefined"></i>
+  项目部署
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于个人
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/taodream518" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://taodream518.github.io/resume" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  个人简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>基于vuepress搭建博客的过程二（插件篇）</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>CoderTao</span>
+          
+        <span data-v-59e6cb88>2022 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">基于vuepress搭建博客的过程二（插件篇）</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>CoderTao</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/2/17</span></i> <i class="iconfont reco-eye" data-v-8a445198><span id="/blogs/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/%E5%9F%BA%E4%BA%8Evuepress%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B%E4%BA%8C%EF%BC%88%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%89.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-8a445198><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>vuepress</span><span class="tag-item" data-v-8a445198>前端</span></i></div></div> <div class="theme-reco-content content__default"><blockquote><p>主要以安装配置各种插件添加功能为主</p></blockquote> <h2 id="_1、bgm-player-音乐播放器"><a href="#_1、bgm-player-音乐播放器" class="header-anchor">#</a> 1、bgm-player（音乐播放器）</h2> <ul><li>安装</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> @vuepress-reco/vuepress-plugin-bgm-player <span class="token parameter variable">-D</span>
+</code></pre></div><ul><li>使用</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// .vuepress/config.js</span>
+<span class="token punctuation">[</span>
+    <span class="token string">&quot;@vuepress-reco/vuepress-plugin-bgm-player&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token literal-property property">audios</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token comment">// 本地文件示例</span>
+            <span class="token punctuation">{</span>
+                <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;장가갈 수 있을까&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">artist</span><span class="token operator">:</span> <span class="token string">&quot;咖啡少年&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;/bgm/1.mp3&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">cover</span><span class="token operator">:</span> <span class="token string">&quot;/bgm/1.jpg&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token comment">// 网络文件示例</span>
+            <span class="token punctuation">{</span>
+                <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;강남역 4번 출구&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">artist</span><span class="token operator">:</span> <span class="token string">&quot;Plastic / Fallin` Dild&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;https://assets.smallsunnyfox.com/music/2.mp3&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">cover</span><span class="token operator">:</span> <span class="token string">&quot;https://assets.smallsunnyfox.com/music/2.jpg&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;用胳膊当枕头&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">artist</span><span class="token operator">:</span> <span class="token string">&quot;최낙타&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;https://assets.smallsunnyfox.com/music/3.mp3&quot;</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">cover</span><span class="token operator">:</span> <span class="token string">&quot;https://assets.smallsunnyfox.com/music/3.jpg&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_2、live2d-人物动作图"><a href="#_2、live2d-人物动作图" class="header-anchor">#</a> 2、live2d（人物动作图）</h2> <ul><li>安装</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-D</span> vuepress-plugin-helper-live2d <span class="token comment"># 安装</span>
+</code></pre></div><ul><li>使用</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// .vuepress/config.js</span>
+ <span class="token punctuation">[</span>
+    <span class="token string">&quot;vuepress-plugin-helper-live2d&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 是否开启控制台日志打印(default: false)</span>
+        <span class="token literal-property property">log</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">live2d</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 是否启用(关闭请设置为false)(default: true)</span>
+            <span class="token literal-property property">enable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token comment">// 模型名称(default: hibiki)&gt;&gt;&gt;取值请参考：</span>
+            <span class="token comment">// https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA</span>
+            <span class="token literal-property property">model</span><span class="token operator">:</span> <span class="token string">&quot;koharu&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">display</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">position</span><span class="token operator">:</span> <span class="token string">&quot;right&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 显示位置：left/right(default: 'right')</span>
+                <span class="token literal-property property">width</span><span class="token operator">:</span> <span class="token number">135</span><span class="token punctuation">,</span> <span class="token comment">// 模型的长度(default: 135)</span>
+                <span class="token literal-property property">height</span><span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span> <span class="token comment">// 模型的高度(default: 300)</span>
+                <span class="token literal-property property">hOffset</span><span class="token operator">:</span> <span class="token number">65</span><span class="token punctuation">,</span> <span class="token comment">//  水平偏移(default: 65)</span>
+                <span class="token literal-property property">vOffset</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//  垂直偏移(default: 0)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">mobile</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">show</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否在移动设备上显示(default: false)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">react</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token literal-property property">opacity</span><span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span> <span class="token comment">// 模型透明度(default: 0.8)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><h2 id="_3、vuepress-plugin-comments-评论插件"><a href="#_3、vuepress-plugin-comments-评论插件" class="header-anchor">#</a> 3、vuepress-plugin-comments（评论插件）</h2> <ul><li>安装</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i @vuepress-reco/vuepress-plugin-comments <span class="token comment"># </span>
+</code></pre></div><ul><li>使用</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// .vuepress/config.js</span>
+
+<span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">valineConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">appId</span><span class="token operator">:</span> <span class="token string">&quot;leancloud 应用appId&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">appKey</span><span class="token operator">:</span> <span class="token string">&quot;leancloud 应用appKey&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token operator">-</span> 资料参考
+<span class="token operator">!</span><span class="token punctuation">[</span>leancloud官网<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token operator">:</span><span class="token operator">/</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">console.leancloud.cn</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span><span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+<span class="token operator">!</span><span class="token punctuation">[</span>leancloud使用教程<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>baijiahao<span class="token punctuation">.</span>baidu<span class="token punctuation">.</span>com<span class="token operator">/</span>s<span class="token operator">?</span>id<span class="token operator">=</span><span class="token number">1756687349925355988</span><span class="token operator">&amp;</span>wfr<span class="token operator">=</span>spider<span class="token operator">&amp;</span><span class="token keyword">for</span><span class="token operator">=</span>pc<span class="token punctuation">)</span>
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>`</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/%E5%9F%BA%E4%BA%8Evuepress%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B%E4%BA%8C%EF%BC%88%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%89.html#_1、bgm-player-音乐播放器" class="sidebar-link reco-side-_1、bgm-player-音乐播放器" data-v-b57cc07c>1、bgm-player（音乐播放器）</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/%E5%9F%BA%E4%BA%8Evuepress%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B%E4%BA%8C%EF%BC%88%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%89.html#_2、live2d-人物动作图" class="sidebar-link reco-side-_2、live2d-人物动作图" data-v-b57cc07c>2、live2d（人物动作图）</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/%E5%9F%BA%E4%BA%8Evuepress%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%BF%87%E7%A8%8B%E4%BA%8C%EF%BC%88%E6%8F%92%E4%BB%B6%E7%AF%87%EF%BC%89.html#_3、vuepress-plugin-comments-评论插件" class="sidebar-link reco-side-_3、vuepress-plugin-comments-评论插件" data-v-b57cc07c>3、vuepress-plugin-comments（评论插件）</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><!----><canvas id="vuepress-canvas-cursor"></canvas><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/bgm/白山茶.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:30px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="/avatar.png" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(/avatar.png);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>白山茶</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Coder-Tao</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div><div></div></div></div>
+    <script src="/assets/js/app.23792ed5.js" defer></script><script src="/assets/js/3.f832e103.js" defer></script><script src="/assets/js/1.09eabf93.js" defer></script><script src="/assets/js/27.b177e864.js" defer></script><script src="/assets/js/9.b9f2e0ad.js" defer></script>
+  </body>
+</html>

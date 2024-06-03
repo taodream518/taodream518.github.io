@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Javascript高级进阶笔记 | YGKing Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="基于vuepress搭建的个人博客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.4415e5c9.css" as="style"><link rel="preload" href="/assets/js/app.23792ed5.js" as="script"><link rel="preload" href="/assets/js/3.f832e103.js" as="script"><link rel="preload" href="/assets/js/1.09eabf93.js" as="script"><link rel="preload" href="/assets/js/14.0ae9ab45.js" as="script"><link rel="preload" href="/assets/js/9.b9f2e0ad.js" as="script"><link rel="prefetch" href="/assets/js/10.4ee935f7.js"><link rel="prefetch" href="/assets/js/11.478384ea.js"><link rel="prefetch" href="/assets/js/12.a755b6f6.js"><link rel="prefetch" href="/assets/js/13.3ab72cb3.js"><link rel="prefetch" href="/assets/js/15.ca3a95b1.js"><link rel="prefetch" href="/assets/js/16.db81403f.js"><link rel="prefetch" href="/assets/js/17.47c01f38.js"><link rel="prefetch" href="/assets/js/18.698e9191.js"><link rel="prefetch" href="/assets/js/19.255b41f5.js"><link rel="prefetch" href="/assets/js/20.dd6c7658.js"><link rel="prefetch" href="/assets/js/21.db2b4b33.js"><link rel="prefetch" href="/assets/js/22.dd556488.js"><link rel="prefetch" href="/assets/js/23.740b62b4.js"><link rel="prefetch" href="/assets/js/24.00a5198c.js"><link rel="prefetch" href="/assets/js/25.83214ede.js"><link rel="prefetch" href="/assets/js/26.520705ca.js"><link rel="prefetch" href="/assets/js/27.b177e864.js"><link rel="prefetch" href="/assets/js/28.51f8bc15.js"><link rel="prefetch" href="/assets/js/29.713d1785.js"><link rel="prefetch" href="/assets/js/4.18293290.js"><link rel="prefetch" href="/assets/js/5.74a63ad4.js"><link rel="prefetch" href="/assets/js/6.4ab946a5.js"><link rel="prefetch" href="/assets/js/7.a93f3fa8.js"><link rel="prefetch" href="/assets/js/8.9922d7e0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4415e5c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>YGKing Blog</h3> <p class="description" data-v-59e6cb88>基于vuepress搭建的个人博客</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>CoderTao</span>
+          
+        <span data-v-59e6cb88>2022 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="YGKing Blog" class="logo"> <span class="site-name">YGKing Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础原理/" class="nav-link"><i class="undefined"></i>
+  基础原理
+</a></li><li class="dropdown-item"><!----> <a href="/categories/开发工具/" class="nav-link"><i class="undefined"></i>
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络协议/" class="nav-link"><i class="undefined"></i>
+  网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/项目部署/" class="nav-link"><i class="undefined"></i>
+  项目部署
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于个人
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/taodream518" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://taodream518.github.io/resume" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  个人简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    CoderTao
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>17</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>20</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Git/" class="nav-link"><i class="undefined"></i>
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/基础原理/" class="nav-link"><i class="undefined"></i>
+  基础原理
+</a></li><li class="dropdown-item"><!----> <a href="/categories/开发工具/" class="nav-link"><i class="undefined"></i>
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络协议/" class="nav-link"><i class="undefined"></i>
+  网络协议
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/项目部署/" class="nav-link"><i class="undefined"></i>
+  项目部署
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于个人
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/taodream518" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://taodream518.github.io/resume" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  个人简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>Javascript高级进阶笔记</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>CoderTao</span>
+          
+        <span data-v-59e6cb88>2022 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">Javascript高级进阶笔记</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>CoderTao</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2020/4/11</span></i> <i class="iconfont reco-eye" data-v-8a445198><span id="/blogs/%E5%89%8D%E7%AB%AF/Javascript%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-8a445198><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>前端</span><span class="tag-item" data-v-8a445198>Javascript</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="一-构造函数和原型"><a href="#一-构造函数和原型" class="header-anchor">#</a> 一. 构造函数和原型</h3> <h4 id="_1-创建对象的三种方式"><a href="#_1-创建对象的三种方式" class="header-anchor">#</a> 1.创建对象的三种方式</h4> <p>1)<strong>对象字面量</strong></p> <div class="language- extra-class"><pre class="language-text"><code>var obj = {};
+</code></pre></div><p>2)<strong>new Object()</strong></p> <div class="language- extra-class"><pre class="language-text"><code>var obj = new Object();
+</code></pre></div><p>3)<strong>new构造函数</strong></p> <div class="language- extra-class"><pre class="language-text"><code>function Star(){ }
+var ldh = new Star();
+</code></pre></div><h4 id="_2-实例成员和静态成员"><a href="#_2-实例成员和静态成员" class="header-anchor">#</a> 2.实例成员和静态成员</h4> <p>1)<strong>实例成员</strong>就是<code>构造函数内部通过this添加</code>的成员(如下代码中的 name 和 age 是实例成员)</p> <p>2)<strong>静态成员</strong>就是在 <code>构造函数本身添加</code>的成员(如下代码中的 sex 是静态成员)</p> <div class="language- extra-class"><pre class="language-text"><code>// 构造函数中的属性和方法我们称为成员，成员可以添加
+function Star(name, age){
+    this.name = name;
+    this.age = age;
+    this.sing = function(){
+       console.log('sing......');
+    }
+}
+// 实例成员(name,age)只能通过实例化的对象来访问，不能通过构造函数访问实例成员
+var ldh = new Star('刘德华', 20);
+console.log(ldh.name); // 刘德华
+console.log(Star.name); // undefined 
+
+// 静态成员只能通过构造函数来访问，不能通过实例化的对象来访问。
+Star.sex = '男';
+console.log(Star.sex); // 男
+console.log(ldh.sex); // undefined
+</code></pre></div><h4 id="_3-构造函数的问题"><a href="#_3-构造函数的问题" class="header-anchor">#</a> 3.构造函数的问题</h4> <p>构造函数存在<code>浪费内存</code>的问题，通过new实例会开辟新的内存空间
+<img src="https://upload-images.jianshu.io/upload_images/18146522-eda94e8b86aa61ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="构造函数存在的问题.png"></p> <div class="language- extra-class"><pre class="language-text"><code>function Star(name, age){
+    this.name = name;
+    this.age = age;
+    this.sing = function(){
+       console.log('sing......');
+    }
+}
+var ldh = new Star('刘德华', 20);
+var zxy= new Star('张学友', 18);
+console.log(ldh.sing === zxy.sing); // false 存放的两个不同的内存地址
+</code></pre></div><h4 id="_4-原型对象-prototype"><a href="#_4-原型对象-prototype" class="header-anchor">#</a> 4.原型对象 prototype</h4> <p>1)原型的概念：是一个对象，通常称prototype为<code>原型对象</code>。
+2)原型的作用：<code>共享方法</code> <code>总结</code>：一般情况下，公共的<code>属性定义在构造函数</code>里，公共的<code>方法定义在原型对象</code>上。</p> <div class="language- extra-class"><pre class="language-text"><code>function Star(name, age){
+    this.name = name;
+    this.age = age;
+}
+Star.prototype.sing = function(){
+    console.log('sing......');
+}
+var ldh = new Star('刘德华', 20);
+var zxy= new Star('张学友', 18);
+console.log(ldh.sing === zxy.sing); // true 原型对象上存放的是同一个内存地址
+</code></pre></div><h4 id="_5-对象原型-proto"><a href="#_5-对象原型-proto" class="header-anchor">#</a> 5.对象原型  __proto__</h4> <p>通常称__proto__为<code>对象原型</code>。每一个通过<code>new 构造函数</code>构建出来的实例对象都有一个属性为<code>__proto__</code>，它指向着构造函数的原型对象<code>即构造函数的.prototype</code>，所以<code>实例对象可以使用原型对象的属性和方法</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>function Star(name, age){
+    this.name = name;
+    this.age = age;
+}
+Star.prototype.sing = function(){
+    console.log('sing......');
+}
+var ldh = new Star('刘德华', 20);
+console.log(ldh.__proto__ === Star.prototype); // true
+</code></pre></div><h4 id="_6-构造函数-constructor"><a href="#_6-构造函数-constructor" class="header-anchor">#</a> 6. 构造函数 constructor</h4> <p>理解：<code>原型对象（prototype）和对象原型(__proto__)</code>都有一个<code>constructor属性</code>，它<code>指向着构造函数的本身</code>(通俗来说，该实例对象是哪个构造函数构建出来的?)。
+作用：1.<code>记录xx实例对象是xx构造函数的引用</code>  2.<code>原型对象利用constructor属性指向构造函数</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>function Star(name, age) {
+	this.name = name;
+	this.age = age;
+}
+/*如果在构造函数原型对象要共享的方法比较多，一般采用对象形式书写.
+所以则会把新的对象覆盖掉Star的原型对象，需要手动指回原来的构造函数*/
+Star.prototype = {
+	constructor: Star,
+	sing: function() {
+		console.log('sing......');
+	},
+	dance: function() {
+		console.log('dance......');
+	}
+}
+var ldh = new Star('刘德华', 20);
+console.log(Star.prototype.constructor); // Star
+console.log(ldh.__proto__.constructor); // Star
+</code></pre></div><h4 id="_7-区别构造函数、原型对象、实例对象三角恋关系🔺"><a href="#_7-区别构造函数、原型对象、实例对象三角恋关系🔺" class="header-anchor">#</a> 7.区别构造函数、原型对象、实例对象三角恋关系🔺</h4> <p><img src="https://upload-images.jianshu.io/upload_images/18146522-9721a866a27edcfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="构造函数、原型对象、对象实例三者关系.png"></p> <h4 id="_8-原型链-一图看懂原型链"><a href="#_8-原型链-一图看懂原型链" class="header-anchor">#</a> 8.原型链（一图看懂原型链）</h4> <p><img src="https://upload-images.jianshu.io/upload_images/18146522-385c08c5715646f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="原型链.png"></p> <h3 id="二-继承"><a href="#二-继承" class="header-anchor">#</a> 二. 继承</h3> <h3 id="三-常用方法"><a href="#三-常用方法" class="header-anchor">#</a> 三. 常用方法</h3> <h4 id="_1-数组方法"><a href="#_1-数组方法" class="header-anchor">#</a> 1. 数组方法</h4> <ul><li><strong>foreach()</strong> <code>循环遍历数组，没有返回值</code>
+参数：value为数组中的每一项，index为每一项的索引值，arr则为数组的本身, 。</li></ul> <p>代码如下:</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [1,2,3,4];
+arr.foreach((item,index,arr) =&gt; {
+     console.log('当前项：', item); // 1,2,3,4
+     console.log('当前项索引值：', index); // 0,1,2,3
+     console.log('数组：', arr); // 输出4次 [1,2,3,4]
+})
+</code></pre></div><ul><li><strong>map()</strong> <code>创建一个的新数组并返回，不影响原数组</code>。：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var arr = [1, 2, 3, 4];
+var newArr = arr.map((item, index) =&gt; item % 2 === 0));
+console.log(newArr); // [2,4]
+</code></pre></div><ul><li><strong>filter()</strong> <code>一般用于数组过滤，符合条件的元素组成新的数组并返回，没有符合条件则返回空数组。不影响原数组。</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>var arr = [10, 20, 30, 40];
+var newArr = arr.filter((item, index, arr) =&gt; item &gt; 20);
+console.log(newArr); // [30, 40]
+</code></pre></div><ul><li><strong>some()</strong> 用于查找数组中符合条件的元素，如果<code>任意一项符合条件则返回,会终止循环，不再继续往下执行,一项符合条件返回true, 否则返回false</code> <code>*注意：空数组返回false</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>var arr = [10, 20, 30, 40, 50];
+var flag = arr.some((item, index) =&gt; item &gt; 100);
+console.log(flag); // false
+console.log([].some(item =&gt; item)); // false
+</code></pre></div><ul><li><strong>every()</strong></li></ul> <p>用于查找数组中符合条件的元素，如果<code>每一项都符合条件则返回true, 否则返回false</code> <code>*注意：空数组返回true</code></p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [10, 20, 30, 40, 50];
+var flag = arr.every((item, index) =&gt; item &gt; 5);
+console.log(flag); // true
+console.log([].every(item =&gt; item)); // true
+</code></pre></div><h4 id="_2-字符串方法"><a href="#_2-字符串方法" class="header-anchor">#</a> 2. 字符串方法</h4> <ul><li><strong>trim()</strong> <code>用于去除字符串首尾空格，并返回去掉空格后的字符串。</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>var str= ' abc ';
+var newStr = str.trim();
+console.log(newStr); // abc
+</code></pre></div><h4 id="_3-对象方法"><a href="#_3-对象方法" class="header-anchor">#</a> 3.对象方法</h4> <ul><li><strong>Object.keys()</strong> <code>用于获取对象自身所有的属性（类似于for...in）并返回由属性名组成的数组</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>var obj = {
+	name: 'tao',
+	age: 18
+}
+var arr = Object.keys(obj);
+console.log(arr); // ['name', 'age']
+</code></pre></div><ul><li><strong>Object.defineProperty()</strong> <code>用于定义新属性或修改原有的属性</code></li></ul> <blockquote><p><strong>Object.defineProperty(obj, prop, descriptor)</strong>
+obj  需要定义属性的当前对象
+prop 当前需要定义的属性
+descriptor 属性描述符。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>var obj = {};
+// 用defineProperty定义和修改属性
+Object.defineProperty(obj, 'name', {
+	value: 'tao',
+	enumerable: false, // 是否可遍历 默认false
+	writable: false, // 是否可重写 默认false
+	configureable: false // configurable属性性表示对象的属性是否可以被删除，以及除writable属性外的其他属性是否可以被修改。
+})
+console.log(obj);
+</code></pre></div><p><a href="https://segmentfault.com/a/1190000007434923" target="_blank" rel="noopener noreferrer">附上需深入defineProperty()方法的链接：https://segmentfault.com/a/1190000007434923<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/blogs/%E5%89%8D%E7%AB%AF/Javascript%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0.html#一-构造函数和原型" class="sidebar-link reco-side-一-构造函数和原型" data-v-b57cc07c>一. 构造函数和原型</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/%E5%89%8D%E7%AB%AF/Javascript%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0.html#二-继承" class="sidebar-link reco-side-二-继承" data-v-b57cc07c>二. 继承</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/%E5%89%8D%E7%AB%AF/Javascript%E8%BF%9B%E9%98%B6%E7%AC%94%E8%AE%B0.html#三-常用方法" class="sidebar-link reco-side-三-常用方法" data-v-b57cc07c>三. 常用方法</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><!----><canvas id="vuepress-canvas-cursor"></canvas><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/bgm/白山茶.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:30px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="/avatar.png" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(/avatar.png);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>白山茶</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Coder-Tao</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:0.8;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div><div></div></div></div>
+    <script src="/assets/js/app.23792ed5.js" defer></script><script src="/assets/js/3.f832e103.js" defer></script><script src="/assets/js/1.09eabf93.js" defer></script><script src="/assets/js/14.0ae9ab45.js" defer></script><script src="/assets/js/9.b9f2e0ad.js" defer></script>
+  </body>
+</html>
